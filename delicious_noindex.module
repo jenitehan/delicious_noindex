@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Override or insert variables into the html templates.
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("html" in this case.)
+ */
+
+function delicious_noindex_preprocess_html(&$variables, $hook) {
+  // Add noindex meta tags while in development
+  $element = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'robots',
+      'content' => 'noindex, nofollow',
+    ),
+  );
+  drupal_add_html_head($element, 'dc_robots');
+}
