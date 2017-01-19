@@ -1,0 +1,6 @@
+{
+    "name": "drupal/delicious_noindex",
+    "description": "Adds noindex, nofollow robots meta tag.",
+    "type": "drupal-module",
+    "license": "GPL 2.0+",
+}
