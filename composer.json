@@ -3,4 +3,5 @@
     "description": "Adds noindex, nofollow robots meta tag.",
     "type": "drupal-module",
     "license": "GPL 2.0+",
+    "require": { }
 }
