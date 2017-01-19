@@ -1,5 +1,0 @@
-name = "Delicious noindex"
-description = "Adds a robots noindex and nofollow meta tag to every page."
-version = "7.x-1.0"
-core = "7.x"
-package = Delicious Creative Custom Modules

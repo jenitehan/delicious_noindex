@@ -1,0 +1,5 @@
+name: Delicious noindex
+type: module
+description: Adds noindex, nofollow robots meta tag.
+core: 8.x
+package: SEO

@@ -1,22 +1,15 @@
 <?php
 
 /**
- * Override or insert variables into the html templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("html" in this case.)
+ * Implements hook_page_attachments().
  */
-
-function delicious_noindex_preprocess_html(&$variables, $hook) {
-  // Add noindex meta tags while in development
-  $element = array(
+function delicious_noindex_page_attachments(array &$attachments) {
+  $robots = [
     '#tag' => 'meta',
-    '#attributes' => array(
+    '#attributes' => [
       'name' => 'robots',
       'content' => 'noindex, nofollow',
-    ),
-  );
-  drupal_add_html_head($element, 'dc_robots');
+    ],
+  ];
+  $attachments['#attached']['html_head'][] = [$robots, 'robots'];
 }
