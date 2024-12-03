@@ -2,5 +2,5 @@ name: Delicious noindex
 type: module
 description: Adds noindex, nofollow robots meta tag.
 core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: SEO
